@@ -5,12 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="railvo" />
-        <meta name="keywords" content="czech republic" />
-        <meta name="description" content="Country: Czech republic Gauge: 1435 mm Length: 24 km Track no: 1 Electrification: 1500 V DC External links Wikipedia: czech" />
+    <meta name="keywords" content="italy" />
 
 
-    <title>Tábor - Bechyně - Railvo</title>
+    <title>italy - Railvo</title>
 
         <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
 
@@ -112,7 +110,7 @@
                     </a>
                 </li>
                 <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li class="active">
+                    <li >
                         <a href="/category/line">
                             <i class="fa fa-folder-open padding-small"></i>
                             line
@@ -134,55 +132,23 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-<section id="content">
-    <article>
-        <div class="row">
-            <div class="col-lg-9">
-                <header class="page-header">
-                    <h1>
-                        <a href="/line/tabor-bechyne"
-                           rel="bookmark"
-                           title="Permalink to Tábor - Bechyně">
-                            Tábor - Bechyně
-                        </a>
-                        <small>
-<div class="post-info">
-    <div class="publish-info-block">
-        <small>
-            <span class="published">
-                <i class="fa fa-calendar padding-small"></i><time datetime="2016-01-21T00:00:10+01:00"> 2016-01-21</time>
-            </span>
-            <span class="category">
-                <i class="fa fa-folder-open padding-small"></i><a href="/category/line">line</a>
-            </span>
-            <span class="tags">
-                <i class="fa fa-tags padding-small"></i>
-                <a href="/tag/czech-republic">czech republic</a>            </span>
-        </small>
+<div class="row">
+    <div class="col-lg-9">
+        <header class="page-header">
+            <h1>Articles featuring italy</h1>
+        </header>
     </div>
-</div><!-- /.post-info -->                        </small>
-                    </h1>
-                </header>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="entry-content">
-                    <p>Country: <strong>Czech republic</strong><br />
-Gauge: <strong>1435 mm</strong><br />
-Length: <strong>24 km</strong><br />
-Track no: <strong>1</strong><br />
-Electrification: <strong>1500 V DC</strong>   </p>
-<h2>External links</h2>
-<p>Wikipedia: <a href="https://cs.wikipedia.org/wiki/Elektrick%C3%A1_dr%C3%A1ha_T%C3%A1bor%E2%80%93Bechyn%C4%9B">czech</a>  </p>
-                </div>
-                <footer class="text-right">
-                    <p>- railvo</p>
-                </footer>
-            </div>
-        </div>
-    </article>
-</section>
+</div>
+<div class="row">
+    <div class="col-lg-9">
+            <article>
+                <h4>
+                    <time datetime="2016-02-18T00:00:10+01:00"> 2016-02-18</time>
+                    <a href="/line/genoa-casella">Genoa - Casella</a>
+                </h4>
+            </article>
+    </div>
+</div>
 <footer>
     <hr>
     <div class="row">
@@ -204,6 +170,24 @@ Electrification: <strong>1500 V DC</strong>   </p>
     <script src="/theme/js/bootstrap.min.js"></script>
     <!-- twitchy Script -->
     <script src="/theme/js/pelican_twitchy.min.js"></script>
+<script>
+    function FadeInOnScroll(ObjectList){
+        ObjectList.each(function(i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
 
+            if( bottom_of_window > bottom_of_object ){
+                $(this).fadeTo(750,1);
+            }
+        });
+    }
+
+    articles = $("article").fadeTo(0, 0.05);
+    FadeInOnScroll(articles)
+
+    $(window).scroll(function() {
+        FadeInOnScroll(articles)
+    });
+</script>
 </body>
 </html>
