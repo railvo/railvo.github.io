@@ -5,12 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="railvo" />
-        <meta name="keywords" content="slovakia,narrow gauge,cogwheel,mountains" />
-        <meta name="description" content="Country: Slovakia Gauge: 1000 mm Length: 5 km Track no: 1 Electrification: 1500 V DC Rack system: Strub External links Wikipedia: english" />
+    <meta name="keywords" content="semaphore signal" />
 
 
-    <title>Štrba - Štrbské Pleso - Railvo</title>
+    <title>semaphore signal - Railvo</title>
 
         <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
 
@@ -112,7 +110,7 @@
                     </a>
                 </li>
                 <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li class="active">
+                    <li >
                         <a href="/category/line">
                             <i class="fa fa-folder-open padding-small"></i>
                             line
@@ -134,56 +132,23 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-<section id="content">
-    <article>
-        <div class="row">
-            <div class="col-lg-9">
-                <header class="page-header">
-                    <h1>
-                        <a href="/line/strba-strbske-pleso"
-                           rel="bookmark"
-                           title="Permalink to Štrba - Štrbské Pleso">
-                            Štrba - Štrbské Pleso
-                        </a>
-                        <small>
-<div class="post-info">
-    <div class="publish-info-block">
-        <small>
-            <span class="published">
-                <i class="fa fa-calendar padding-small"></i><time datetime="2016-01-28T00:00:10+01:00"> 2016-01-28</time>
-            </span>
-            <span class="category">
-                <i class="fa fa-folder-open padding-small"></i><a href="/category/line">line</a>
-            </span>
-            <span class="tags">
-                <i class="fa fa-tags padding-small"></i>
-                <a href="/tag/slovakia">slovakia</a> /                 <a href="/tag/narrow-gauge">narrow gauge</a> /                 <a href="/tag/cogwheel">cogwheel</a> /                 <a href="/tag/mountains">mountains</a>            </span>
-        </small>
+<div class="row">
+    <div class="col-lg-9">
+        <header class="page-header">
+            <h1>Articles featuring semaphore signal</h1>
+        </header>
     </div>
-</div><!-- /.post-info -->                        </small>
-                    </h1>
-                </header>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="entry-content">
-                    <p>Country: <strong>Slovakia</strong><br />
-Gauge: <strong>1000 mm</strong><br />
-Length: <strong>5 km</strong><br />
-Track no: <strong>1</strong><br />
-Electrification: <strong>1500 V DC</strong> <br />
-Rack system: <strong>Strub</strong>  </p>
-<h3>External links</h3>
-<p>Wikipedia: <a href="https://en.wikipedia.org/wiki/%C5%A0trbsk%C3%A9_Pleso_%E2%80%93_%C5%A0trba_rack_railway">english</a>  </p>
-                </div>
-                <footer class="text-right">
-                    <p>- railvo</p>
-                </footer>
-            </div>
-        </div>
-    </article>
-</section>
+</div>
+<div class="row">
+    <div class="col-lg-9">
+            <article>
+                <h4>
+                    <time datetime="2016-03-10T00:00:10+01:00"> 2016-03-10</time>
+                    <a href="/line/hamburg-westerland-sylt">Hamburg - Westerland (Sylt)</a>
+                </h4>
+            </article>
+    </div>
+</div>
 <footer>
     <hr>
     <div class="row">
@@ -205,6 +170,24 @@ Rack system: <strong>Strub</strong>  </p>
     <script src="/theme/js/bootstrap.min.js"></script>
     <!-- twitchy Script -->
     <script src="/theme/js/pelican_twitchy.min.js"></script>
+<script>
+    function FadeInOnScroll(ObjectList){
+        ObjectList.each(function(i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
 
+            if( bottom_of_window > bottom_of_object ){
+                $(this).fadeTo(750,1);
+            }
+        });
+    }
+
+    articles = $("article").fadeTo(0, 0.05);
+    FadeInOnScroll(articles)
+
+    $(window).scroll(function() {
+        FadeInOnScroll(articles)
+    });
+</script>
 </body>
 </html>
