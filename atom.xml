@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Railvo</title><link href="/" rel="alternate"></link><link href="http://railvo.com/atom.xml" rel="self"></link><id>/</id><updated>2016-03-10T00:00:10+01:00</updated><entry><title>Hamburg - Westerland (Sylt)</title><link href="/line/hamburg-westerland-sylt" rel="alternate"></link><updated>2016-03-10T00:00:10+01:00</updated><author><name>railvo</name></author><id>tag:,2016-03-10:line/hamburg-westerland-sylt</id><summary type="html">&lt;p&gt;Country: &lt;strong&gt;Germany&lt;/strong&gt;&lt;br /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Railvo</title><link href="/" rel="alternate"></link><link href="http://railvo.com/atom.xml" rel="self"></link><id>/</id><updated>2016-03-17T00:00:10+01:00</updated><entry><title>Dívčice - Netolice</title><link href="/line/divcice-netolice" rel="alternate"></link><updated>2016-03-17T00:00:10+01:00</updated><author><name>railvo</name></author><id>tag:,2016-03-17:line/divcice-netolice</id><summary type="html">&lt;p&gt;Country: &lt;strong&gt;Czech republic&lt;/strong&gt;&lt;br /&gt;
+Gauge: &lt;strong&gt;1435 mm&lt;/strong&gt;&lt;br /&gt;
+Length: &lt;strong&gt;14 km&lt;/strong&gt;&lt;br /&gt;
+Track no: &lt;strong&gt;1&lt;/strong&gt;&lt;br /&gt;
+Electrification: &lt;strong&gt;no electrification&lt;/strong&gt;  &lt;/p&gt;
+&lt;h3&gt;Cabride video&lt;/h3&gt;
+&lt;p&gt;By &lt;a href="https://www.youtube.com/channel/UCUAwU_wi13Q2vFG-sQkDGtw"&gt;javdeluxe&lt;/a&gt;:  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=lpk612J7a1I"&gt;Netolice - Malovice u Netolic&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=yV0SWwyPvTs"&gt;Malovice u Netolic - Dívčice&lt;/a&gt;&lt;/strong&gt;  &lt;/p&gt;
+&lt;h3&gt;External links&lt;/h3&gt;
+&lt;p&gt;Wikipedia: &lt;a href="https://cs.wikipedia.org/wiki/%C5%BDelezni%C4%8Dn%C3%AD_tra%C5%A5_D%C3%ADv%C4%8Dice%E2%80%93Netolice"&gt;czech&lt;/a&gt;   &lt;/p&gt;</summary><category term="czech republic"></category></entry><entry><title>Hamburg - Westerland (Sylt)</title><link href="/line/hamburg-westerland-sylt" rel="alternate"></link><updated>2016-03-10T00:00:10+01:00</updated><author><name>railvo</name></author><id>tag:,2016-03-10:line/hamburg-westerland-sylt</id><summary type="html">&lt;p&gt;Country: &lt;strong&gt;Germany&lt;/strong&gt;&lt;br /&gt;
 Gauge: &lt;strong&gt;1435 mm&lt;/strong&gt;&lt;br /&gt;
 Length: &lt;strong&gt;211 km&lt;/strong&gt;&lt;br /&gt;
 Track no:&lt;br /&gt;
