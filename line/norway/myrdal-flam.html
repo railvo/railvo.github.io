@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="railvo" />
+    <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+<!--[if lte IE 8]>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+<![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<style>#map{height:500px;width:100%} #map img{padding:0}</style>
+
+
+    <title>Myrdal - Flåm - railvo</title>
+
+   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />  
+
+
+      <link rel="stylesheet" href="/theme/css/voidybootstrap.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+
+  <body>
+   
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+	   <div class="navbar-header">
+		<button type="button" class="navbar-toggle" 
+				data-toggle="collapse" data-target="#main-navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/" rel="home">
+          <i class="fa fa-home fa-fw fa-lg"> </i> </a>
+       </div>
+
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="divider"></li>
+            <li class="">
+              <a href="/archives.html">Archives</a>
+            </li>
+          <li class="divider"></li>
+        </ul> <!-- /nav -->
+      </div> <!-- /navbar-collapse -->
+	  </div> <!-- /container -->
+    </nav> <!-- /navbar -->
+
+	<div class="jumbotron" id="overview">
+	  <div class="container">
+		<h1><a href="/">railvo</a></h1>
+	  </div>
+	</div>
+
+    <div class="container" id="main-container">
+      <div class="row">
+        <div class="col-md-9" id="content">
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <header class="article-header">
+<abbr class="article-header-date">
+  čt 21 duben 2016
+</abbr> <h1>
+  <a href="/line/norway/myrdal-flam.html" rel="bookmark"
+     title="Permalink to Myrdal - Flåm">
+    Myrdal - Flåm
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/railvo.html">railvo</a>
+    in 
+    <a href="/category/line.html">
+      line</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->  </header>
+  <div class="content-body" itemprop="text articleBody">
+	<div id="map"></div>
+
+<script language="javascript">
+line = {"features": [{"geometry": {"coordinates": [[7.1142038, 60.8629174], [7.11391, 60.862896], [7.1116202, 60.8627292], [7.1113281, 60.8626746], [7.1106954, 60.8625592], [7.1100376, 60.8624344], [7.1093015, 60.8622864], [7.1087557, 60.8621044], [7.1084407, 60.8619054], [7.1080958, 60.861622], [7.1078933, 60.8613478], [7.1078211, 60.8604416], [7.1077631, 60.8601281], [7.1077299, 60.8597195], [7.1082689, 60.8588551], [7.1084172, 60.8579944], [7.108495, 60.8577828], [7.1092524, 60.8571902], [7.1093275, 60.8571144], [7.1113086, 60.8555661], [7.1116664, 60.8551276], [7.1118343, 60.8546861], [7.1121077, 60.8529436], [7.1122693, 60.8526668], [7.112281, 60.8526299], [7.1126343, 60.8520673], [7.1136764, 60.850965], [7.1138695, 60.8507976], [7.1150939, 60.8495684], [7.1155706, 60.8489883], [7.1159909, 60.8486479], [7.1166723, 60.8482439], [7.1175335, 60.8478906], [7.1186575, 60.8475269], [7.1192348, 60.8472201], [7.1194368, 60.8469977], [7.1196196, 60.8467721], [7.1197694, 60.8456039], [7.1198197, 60.8452119], [7.120169, 60.8444844], [7.1204835, 60.8440491], [7.121158, 60.8434126], [7.1217458, 60.8430186], [7.1221391, 60.8427582], [7.1225011, 60.8424215], [7.1225958, 60.8419778], [7.1223259, 60.840674], [7.1224663, 60.8403305], [7.1227963, 60.8397553], [7.1230904, 60.8393008], [7.124709, 60.8367079], [7.1250092, 60.8364047], [7.1257405, 60.8358625], [7.1259689, 60.8355412], [7.1260348, 60.8352372], [7.1258332, 60.8346644], [7.1253094, 60.834146], [7.124234, 60.8335321], [7.1238576, 60.8331871], [7.1235933, 60.8327863], [7.1233666, 60.8318181], [7.1234826, 60.8309636], [7.1239362, 60.830099], [7.124073, 60.8298482], [7.1240789, 60.8295188], [7.124051, 60.8293808], [7.1239705, 60.8291802], [7.1236494, 60.8288894], [7.1227212, 60.828474], [7.1216247, 60.8280909], [7.1207105, 60.8274025], [7.1198733, 60.8263665], [7.1189568, 60.8242917], [7.1185771, 60.8236652], [7.118678, 60.8232156], [7.1190216, 60.8228579], [7.119399, 60.8226492], [7.1205078, 60.8221014], [7.1208779, 60.821643], [7.1208753, 60.8207431], [7.1210818, 60.8200952], [7.121533, 60.8195471], [7.1219428, 60.8190466], [7.1229497, 60.8183779], [7.123223, 60.8178977], [7.1228302, 60.8169453], [7.1228886, 60.8162815], [7.1236476, 60.8154144], [7.1241469, 60.8143253], [7.1242514, 60.81334], [7.1241334, 60.8126923], [7.1241608, 60.8123021], [7.1241971, 60.8120735], [7.1242793, 60.8118616], [7.1242485, 60.8112187], [7.1235907, 60.809637], [7.1234652, 60.8089036], [7.1235099, 60.807712], [7.1234195, 60.8074725], [7.1232912, 60.8073393], [7.1231059, 60.8072174], [7.1223674, 60.8068676], [7.1200013, 60.8064177], [7.1195219, 60.8063579], [7.1190675, 60.8063468], [7.1185114, 60.8063537], [7.1178808, 60.8063703], [7.1170924, 60.8062946], [7.1158232, 60.8059946], [7.114086, 60.80601], [7.113729, 60.8057803], [7.1126088, 60.8049847], [7.1124095, 60.8046929], [7.111722, 60.8029257], [7.1114478, 60.8025932], [7.1092409, 60.801479], [7.1084404, 60.8010471], [7.108, 60.8003929], [7.1078274, 60.8001427], [7.1072058, 60.7997482], [7.1048983, 60.7988303], [7.1041414, 60.798406], [7.1026355, 60.7971446], [7.1024152, 60.7967671], [7.1022934, 60.7957471], [7.1021158, 60.7950221], [7.1019783, 60.7945764], [7.1015083, 60.7941548], [7.101206, 60.7939102], [7.1008894, 60.7935678], [7.1006487, 60.7930615], [7.0999615, 60.7924495], [7.0980703, 60.7913328], [7.0977886, 60.7910791], [7.0976333, 60.7907524], [7.097695, 60.7904162], [7.0980374, 60.7898668], [7.0981061, 60.7895998], [7.0980467, 60.7893002], [7.0978444, 60.7890571], [7.0974657, 60.7887738], [7.0970509, 60.7886061], [7.0965841, 60.7884408], [7.0959439, 60.7881786], [7.0953238, 60.7879232], [7.0950023, 60.7876766], [7.0948099, 60.7874122], [7.0946625, 60.7870041], [7.0946151, 60.7868081], [7.094602, 60.7865042], [7.0947144, 60.7858452], [7.0946978, 60.785703], [7.0947259, 60.7852326], [7.0950013, 60.7848888], [7.0954573, 60.784605], [7.0965938, 60.7842335], [7.0971786, 60.7839682], [7.097507, 60.7836659], [7.0978361, 60.7831532], [7.0980226, 60.7827565], [7.0980777, 60.7824546], [7.0980239, 60.7821856], [7.0977843, 60.7818255], [7.0974707, 60.7812805], [7.0974368, 60.7808029], [7.0975433, 60.7805096], [7.0985137, 60.7796935], [7.0993855, 60.7791085], [7.10001, 60.7788701], [7.1007515, 60.7787302], [7.1015218, 60.7786491], [7.1020448, 60.778541], [7.1025023, 60.7784], [7.1028446, 60.7782258], [7.1031708, 60.7779876], [7.1033103, 60.7778142], [7.1034331, 60.7775556], [7.103453, 60.7774478], [7.1034614, 60.7772122], [7.1033472, 60.7769767], [7.1026812, 60.7762566], [7.1024085, 60.7756281], [7.1024368, 60.7751853], [7.1026134, 60.774694], [7.1026745, 60.7742931], [7.1026835, 60.773905], [7.1026455, 60.7734319], [7.1024252, 60.7727739], [7.1019589, 60.7719298], [7.1019416, 60.7718001], [7.1019373, 60.7717164], [7.1019705, 60.7713277], [7.1024409, 60.7704007], [7.1030104, 60.7680977], [7.1030807, 60.7676595], [7.1031416, 60.7657766], [7.103003, 60.7651437], [7.1026019, 60.7645512], [7.0999649, 60.7624131], [7.0996771, 60.7616957], [7.0999089, 60.7608106], [7.100235, 60.7600082], [7.1009442, 60.7591868], [7.1034547, 60.7572305], [7.1045821, 60.756651], [7.1051523, 60.7564425], [7.1059251, 60.7563143], [7.1071608, 60.7562267], [7.1196627, 60.7553132], [7.1219931, 60.7549767], [7.1241755, 60.7545093], [7.1251688, 60.7540542], [7.1258983, 60.7535091], [7.1265886, 60.7527417], [7.1269069, 60.7520623], [7.1269986, 60.7512085], [7.1268754, 60.7496535], [7.1270366, 60.749193], [7.1273094, 60.7488113], [7.1276566, 60.7485204], [7.1280782, 60.7482538], [7.1285494, 60.748066], [7.1290454, 60.7479933], [7.1297864, 60.74797], [7.1308551, 60.7480362], [7.1318198, 60.7481787], [7.1331838, 60.7486432], [7.1346118, 60.7490406], [7.1352968, 60.7490847], [7.135885, 60.7490347], [7.1363053, 60.7488645], [7.1365737, 60.748651], [7.1366146, 60.7480745], [7.1364555, 60.7476587], [7.1360969, 60.7472803], [7.1356315, 60.7469781], [7.134705, 60.7466324], [7.1335941, 60.7462741], [7.132754, 60.7459821], [7.1319762, 60.745668], [7.131458, 60.7454819], [7.1305492, 60.7453016], [7.1297628, 60.7452638], [7.1291985, 60.7452544], [7.128662, 60.7452554], [7.12819, 60.7452067], [7.1277029, 60.7450578], [7.127293, 60.7448659], [7.1270463, 60.7446289], [7.1268253, 60.7443641], [7.1266182, 60.7440243], [7.1265592, 60.7437191], [7.1265066, 60.7434108], [7.1265581, 60.7431329], [7.1269293, 60.7427072], [7.1272179, 60.7425409], [7.1276428, 60.7424764], [7.128382, 60.7425042], [7.1289378, 60.7426574], [7.1291813, 60.7428341], [7.1294807, 60.7433731], [7.1301984, 60.7442456], [7.1305299, 60.7447044], [7.1312423, 60.7451123], [7.1320255, 60.7453598], [7.1328785, 60.7454772], [7.1336252, 60.7455233], [7.1343794, 60.7454143], [7.1350717, 60.7452734], [7.1359356, 60.7450239], [7.1393467, 60.7438464], [7.140038, 60.7436078], [7.1404317, 60.7434026], [7.1409175, 60.743068], [7.1411047, 60.7427119], [7.1411364, 60.7424038], [7.1409333, 60.7419811], [7.140573, 60.7416529], [7.1400107, 60.7413773], [7.1392571, 60.7412341], [7.1385158, 60.741156], [7.1376498, 60.7412238], [7.1368275, 60.7413802], [7.1353885, 60.7419442], [7.134796, 60.7423843], [7.1342265, 60.7428587], [7.1337498, 60.7431686], [7.1326731, 60.7436594], [7.1321345, 60.7438325], [7.1315923, 60.7439548], [7.1310506, 60.7440274], [7.130587, 60.7440505], [7.1301099, 60.7440342], [7.1298691, 60.7440092], [7.1295516, 60.7439488], [7.1292965, 60.7438618], [7.1289776, 60.7437072], [7.1286947, 60.7435244], [7.1284381, 60.743293], [7.1282312, 60.7430008], [7.1280762, 60.7426694], [7.1280676, 60.7425808], [7.128022, 60.7420266], [7.1278401, 60.7412866], [7.1274533, 60.7405752], [7.1271045, 60.7403231], [7.1266925, 60.7400924], [7.1262147, 60.7398839], [7.1245467, 60.7393708], [7.1240186, 60.7391858], [7.1234567, 60.7389219], [7.1230361, 60.738666], [7.1227113, 60.738377], [7.1225039, 60.7380828], [7.1222121, 60.7375332], [7.1221263, 60.7372647], [7.1221091, 60.736992], [7.1221606, 60.7367025], [7.1223962, 60.7364469], [7.1225384, 60.7362057], [7.1227251, 60.7359314], [7.1228066, 60.735789], [7.1228387, 60.7356074], [7.1227642, 60.7353794], [7.1227374, 60.7351879], [7.1227669, 60.7349447], [7.1227959, 60.7347656], [7.1227946, 60.7346163], [7.1226928, 60.7343864], [7.1224954, 60.7340885], [7.1222035, 60.733841], [7.1219303, 60.733644]], "type": "LineString"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"}
+var map = L.map('map').setView([0,0],13);
+var mqLayer = L.tileLayer("http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {maxZoom: 17, subdomains:"abc",attribution:"Map data: &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>, <a href='http://viewfinderpanoramas.org'>SRTM</a> | Map style: &copy; <a href='https://opentopomap.org'>OpenTopoMap</a> (<a href='https://creativecommons.org/licenses/by-sa/3.0/'>CC-BY-SA</a>)"})
+mqLayer.addTo(map);
+map.attributionControl.setPrefix('');
+var geojsonLayer = L.geoJson(line,{style:{"color":"#0000ff","weight":4,"opacity":0.8}}).addTo(map);
+map.fitBounds(geojsonLayer.getBounds());
+</script>
+
+<h2>Line</h2>
+<p>Country: <strong>Norway</strong><br />
+Gauge: <strong>1435 mm</strong><br />
+Length: <strong>20 km</strong><br />
+Track no: <strong>1</strong><br />
+Electrification: <strong>15 kV 16 2/3 Hz</strong>   </p>
+<h2>Cabrides</h2>
+<p>By <a href="https://www.youtube.com/channel/UC2T66EvDai2PGaN5BsrfqoA">KULTUR VARDER:</a><br />
+&nbsp;&nbsp;<strong><a href="https://www.youtube.com/watch?v=HjEu0GOzeCc">Myrdal - Flåm</a></strong>  </p>
+<h2>External links</h2>
+<p><a href="https://en.wikipedia.org/wiki/Fl%C3%A5m_Line">https://en.wikipedia.org/wiki/Fl%C3%A5m_Line</a> (en)<br />
+<a href="https://www.visitflam.com/en/se-og-gjore/flamsbana/">https://www.visitflam.com/en/se-og-gjore/flamsbana/</a> (en)  </p>
+  </div>
+  
+<div class="article-tag-list">
+<span class="label label-default">Tags</span>
+	<a href="/tag/norway.html"><i class="fa fa-tag"></i>norway</a>&nbsp;
+	<a href="/tag/regional.html"><i class="fa fa-tag"></i>regional</a>&nbsp;
+	<a href="/tag/scenic.html"><i class="fa fa-tag"></i>scenic</a>&nbsp;
+	<a href="/tag/electrified.html"><i class="fa fa-tag"></i>electrified</a>&nbsp;
+	<a href="/tag/mountains.html"><i class="fa fa-tag"></i>mountains</a>&nbsp;
+</div>  <hr />
+  <div class="well well-sm">  <!-- Social media sharing buttons -->
+
+    <!-- Google+ -->
+    <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="g-plusone" data-size="medium"></div>&nbsp;
+
+    <!-- Facebook -->
+    <div class="fb-like" 
+        data-href="/line/norway/myrdal-flam.html" 
+        data-layout="button_count" 
+        data-action="like" data-show-faces="true" 
+        data-share="true">
+    </div>
+    &nbsp;
+  </div> <!-- /Social media sharing buttons -->
+</article>
+        </div><!-- /content -->
+
+        <div class="col-md-3 sidebar-nav" id="sidebar">
+
+<div class="row">
+
+
+<div class="col-xs-6 col-md-12">
+<h4><i class="fa fa-folder fa-fw fa-lg"></i> Categories</h4>
+<ul class="list-unstyled category-links">
+  <li><a href="/category/line.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> line</a></li>
+</ul>
+</div>
+
+</div> <!-- /row -->
+
+
+<h4><i class="fa fa-tags fa-fw fa-lg"></i> Tags</h4>
+<p class="tag-cloud">
+<span class="tag-2">
+    <a href="/tag/alps.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>alps
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/austria.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>austria
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/bosnia-and-herzegovina.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>bosnia and herzegovina
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/bulgaria.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>bulgaria
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/california.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>california
+    </a>
+</span>
+<span class="tag-3">
+    <a href="/tag/croatia.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>croatia
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/czech-republic.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>czech republic
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/electrified.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>electrified
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/france.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>france
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/funicular.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>funicular
+    </a>
+</span>
+<span class="tag-3">
+    <a href="/tag/germany.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>germany
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/greece.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>greece
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/high-tatras.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>high tatras
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/industrial.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>industrial
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/italy.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>italy
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/karst.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>karst
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/main.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>main
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/mallorca.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>mallorca
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/mountains.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>mountains
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/mudflat.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>mudflat
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/narrow-gauge.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>narrow gauge
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/new-zealand.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>new zealand
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/norway.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>norway
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/over-the-sea.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>over the sea
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/pyrenees.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>pyrenees
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/rack.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>rack
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/regional.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>regional
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/rhaetian-railway.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>rhaetian railway
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/scenic.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>scenic
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/seaside.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>seaside
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/semaphore-signal.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>semaphore signal
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/slovakia.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>slovakia
+    </a>
+</span>
+<span class="tag-3">
+    <a href="/tag/slovenia.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>slovenia
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/spain.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>spain
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/steam.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>steam
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/suburban.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>suburban
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/switzerland.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>switzerland
+    </a>
+</span>
+<span class="tag-3">
+    <a href="/tag/tram.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>tram
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/united-states.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>united states
+    </a>
+</span>
+</p>
+
+
+<hr />
+
+        </div><!--/sidebar -->
+      </div><!--/row-->
+    </div><!--/.container /#main-container -->
+
+    <footer id="site-footer">
+ 
+      <address id="site-colophon">
+        <p class="text-center text-muted">
+        Site built using <a href="http://getpelican.com/" target="_blank">Pelican</a>
+        &nbsp;&bull;&nbsp; Theme based on
+        <a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"
+           target="_blank">VoidyBootstrap</a> by 
+        <a href="http://www.robertiwancz.com/"
+           target="_blank">RKI</a>  
+        </p>
+      </address><!-- /colophon  -->
+    </footer>
+
+
+    <!-- javascript -->
+   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google+ -->
+<!-- Synchronous 
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+-->
+<!-- Asynchronous -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>  </body>
+</html>
