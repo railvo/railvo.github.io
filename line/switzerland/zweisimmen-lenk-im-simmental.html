@@ -1,94 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="railvo" />
-    <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
-<!--[if lte IE 8]>
-   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
-<![endif]-->
-<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-<style>#map{height:500px;width:100%} #map img{padding:0}</style>
+<head>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>railvo - Zweisimmen - Lenk im Simmental</title>
 
 
-    <title>Zweisimmen - Lenk im Simmental - railvo</title>
 
-   
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />  
+    <meta name="tags" content="switzerland" />
+    <meta name="tags" content="narrow gauge" />
+    <meta name="tags" content="electrified" />
+    <meta name="tags" content="scenic" />
+    <meta name="tags" content="mountains" />
+    <meta name="tags" content="alps" />
 
 
-      <link rel="stylesheet" href="/theme/css/voidybootstrap.css" />
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/theme/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/theme/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <!-- leaflet -->
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+        <!--[if lte IE 8]>
+           <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+        <![endif]-->
+        <style>#map{height:500px;width:100%} #map img{padding:0}</style>
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- leaflet -->
+        <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 
-    <link rel="shortcut icon" href="/favicon.ico" />
-  </head>
+</head>
 
-  <body>
-   
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-	   <div class="navbar-header">
-		<button type="button" class="navbar-toggle" 
-				data-toggle="collapse" data-target="#main-navbar-collapse">
-		  <span class="sr-only">Toggle navigation</span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href="/" rel="home">
-          <i class="fa fa-home fa-fw fa-lg"> </i> </a>
-       </div>
+<body>
+        <nav class="blue-grey darken-3" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">railvo</a>
+                <ul class="right hide-on-med-and-down">
+  
+                    <li class="">
+                        <a href="/archives.html">Archives</a>
+                    </li>
+                </ul>
 
-      <div class="collapse navbar-collapse" id="main-navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li class="divider"></li>
-            <li class="">
-              <a href="/archives.html">Archives</a>
-            </li>
-          <li class="divider"></li>
-        </ul> <!-- /nav -->
-      </div> <!-- /navbar-collapse -->
-	  </div> <!-- /container -->
-    </nav> <!-- /navbar -->
-
-	<div class="jumbotron" id="overview">
-	  <div class="container">
-		<h1><a href="/">railvo</a></h1>
-	  </div>
-	</div>
-
-    <div class="container" id="main-container">
-      <div class="row">
-        <div class="col-md-9" id="content">
-<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-  <header class="article-header">
-<abbr class="article-header-date">
-  čt 03 březen 2016
-</abbr> <h1>
-  <a href="/line/switzerland/zweisimmen-lenk-im-simmental.html" rel="bookmark"
-     title="Permalink to Zweisimmen - Lenk im Simmental">
-    Zweisimmen - Lenk im Simmental
-  </a>
-</h1><div class="article-header-info">
-  <p>
-      Posted by <a href="/author/railvo.html">railvo</a>
-    in 
-    <a href="/category/line.html">
-      line</a>
-    &nbsp;&nbsp;
-  </p>
-</div> <!-- /.article-header-info -->  </header>
-  <div class="content-body" itemprop="text articleBody">
-	<div id="map"></div>
+                <ul id="nav-mobile" class="side-nav">
+  
+                    <li class="">
+                        <a href="/archives.html">Archives</a>
+                    </li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <header>
+        <h2 class="entry-title">
+          <a href="/line/switzerland/zweisimmen-lenk-im-simmental.html" rel="bookmark"
+             title="Permalink to Zweisimmen - Lenk im Simmental">Zweisimmen - Lenk im Simmental</a></h2>
+     
+     
+<div>
+	<div class="chip"><a href="/tag/switzerland.html">switzerland</a></div>
+	<div class="chip"><a href="/tag/narrow-gauge.html">narrow gauge</a></div>
+	<div class="chip"><a href="/tag/electrified.html">electrified</a></div>
+	<div class="chip"><a href="/tag/scenic.html">scenic</a></div>
+	<div class="chip"><a href="/tag/mountains.html">mountains</a></div>
+	<div class="chip"><a href="/tag/alps.html">alps</a></div>
+</div>     
+      </header>
+      <div class="entry-content">
+        <div id="map"></div>
 
 <script language="javascript">
 line = {"features": [{"geometry": {"coordinates": [[7.374803, 46.553346], [7.3749222, 46.5518416], [7.3749468, 46.5515395], [7.3749484, 46.5514899], [7.3749876, 46.5512981], [7.3750413, 46.551106], [7.3751255, 46.5509456], [7.3752121, 46.5508443], [7.3754137, 46.5506162], [7.375466, 46.5505687], [7.3756536, 46.5504609], [7.3757569, 46.5504163], [7.376016, 46.5503321], [7.3762235, 46.5502885], [7.3767547, 46.5501786], [7.3771036, 46.5500817], [7.3773815, 46.5499735], [7.3776285, 46.5498464], [7.3780283, 46.5495882], [7.378278, 46.5494218], [7.3785148, 46.5492738], [7.3786985, 46.5491819], [7.3791556, 46.5489526], [7.3793984, 46.5488312], [7.3795986, 46.5487079], [7.3798587, 46.5485371], [7.3801653, 46.5482913], [7.3812614, 46.5473929], [7.3816228, 46.5470908], [7.3818007, 46.5469338], [7.3820779, 46.5466267], [7.3833436, 46.5450427], [7.3836924, 46.5445771], [7.3838823, 46.5441802], [7.3848786, 46.5419805], [7.3850394, 46.5417426], [7.3853922, 46.5410324], [7.385461, 46.5409259], [7.3858226, 46.540486], [7.3859072, 46.5404059], [7.3860432, 46.5402929], [7.386296, 46.5400429], [7.386401, 46.5398666], [7.3864788, 46.5396622], [7.3865398, 46.5393346], [7.3865133, 46.5387638], [7.386498, 46.538196], [7.3865208, 46.5380142], [7.3865244, 46.5379496], [7.3866033, 46.5377104], [7.3866749, 46.5375603], [7.3867921, 46.5373931], [7.3869347, 46.5372571], [7.3871106, 46.5371199], [7.3875478, 46.5368419], [7.3880679, 46.5365228], [7.388359, 46.5363429], [7.3886057, 46.5361685], [7.3887801, 46.5360283], [7.3888699, 46.5359462], [7.389, 46.5358143], [7.3891019, 46.5357017], [7.3893125, 46.5354001], [7.3895686, 46.5349867], [7.3897564, 46.5346805], [7.3901348, 46.5340512], [7.3902741, 46.5338105], [7.3903706, 46.5336176], [7.3904699, 46.5333815], [7.3905423, 46.5331674], [7.390604, 46.5329728], [7.3906603, 46.5327024], [7.3906831, 46.5325188], [7.3906858, 46.5322162], [7.390659, 46.5319644], [7.3906253, 46.5317575], [7.3905584, 46.5315012], [7.3904779, 46.5312927], [7.3897883, 46.5297425], [7.3895227, 46.5291626], [7.3894302, 46.5289513], [7.3893062, 46.5286462], [7.3890802, 46.5280877], [7.3889957, 46.5278497], [7.3889166, 46.527654], [7.3888187, 46.5273772], [7.3886577, 46.5268864], [7.3884498, 46.5261049], [7.3883068, 46.5255121], [7.3882603, 46.5253431], [7.3881897, 46.5250179], [7.3881389, 46.5246956], [7.3880218, 46.523558], [7.387906, 46.5225467], [7.3878743, 46.5222084], [7.3878358, 46.5218947], [7.3877164, 46.5208666], [7.3877087, 46.5205843], [7.3877235, 46.5199606], [7.3877317, 46.5198654], [7.3877973, 46.5191073], [7.3879069, 46.5181556], [7.388073, 46.5176882], [7.3881425, 46.51753], [7.3882679, 46.517254], [7.3889698, 46.5157461], [7.3890798, 46.5155116], [7.389179, 46.5152911], [7.389294, 46.5150449], [7.389409, 46.5148236], [7.3895528, 46.5146411], [7.3897945, 46.5143634], [7.3899377, 46.5141176], [7.3900026, 46.5138726], [7.3900064, 46.5134982], [7.3899703, 46.5128478], [7.3899692, 46.512504], [7.389999, 46.5123062], [7.3900624, 46.5121158], [7.390108, 46.5120268], [7.3901677, 46.5119363], [7.390277, 46.5117988], [7.390439, 46.5116497], [7.390566, 46.5115561], [7.3907593, 46.5114309], [7.3916834, 46.5110776], [7.3918738, 46.5109599], [7.3920249, 46.5108535], [7.3921595, 46.5107296], [7.3923032, 46.5105743], [7.3926025, 46.5102435], [7.3927994, 46.5100239], [7.3929821, 46.5096983], [7.3930382, 46.5093859], [7.3929851, 46.5090105], [7.3929534, 46.5086049], [7.3929691, 46.5084557], [7.3930184, 46.5082432], [7.3931619, 46.507926], [7.3937438, 46.507035], [7.393983, 46.5067848], [7.3942063, 46.5066243], [7.394368, 46.5065333], [7.3947955, 46.5063778], [7.3956837, 46.5062219], [7.3974929, 46.5059406], [7.3982819, 46.5057997], [7.3989731, 46.5056622], [7.3991181, 46.5056292], [7.3998953, 46.5054526], [7.4013816, 46.5051215], [7.4016941, 46.5050519], [7.4023194, 46.5049142], [7.4027856, 46.5047985], [7.4028945, 46.5047681], [7.4029859, 46.5047419], [7.403099, 46.5047037], [7.4036728, 46.5044649], [7.408758, 46.5021868], [7.4095246, 46.5019134], [7.4096766, 46.5018592], [7.4129818, 46.5007412], [7.4151985, 46.4999915], [7.4172938, 46.4992827], [7.4178689, 46.4990316], [7.4180461, 46.4989256], [7.4182074, 46.4988007], [7.4184294, 46.498559], [7.4185088, 46.4984303], [7.4187182, 46.4979362], [7.4187264, 46.4979168], [7.4195514, 46.4953634], [7.419655, 46.4950552], [7.4198124, 46.4948063], [7.4198725, 46.4947282], [7.4201338, 46.4945191], [7.4204057, 46.4943703], [7.4206683, 46.4942306], [7.4209303, 46.4941042], [7.421172, 46.4939927], [7.4213239, 46.4939057], [7.4215391, 46.4937704], [7.4216736, 46.493665], [7.421814, 46.4935218], [7.42203, 46.4932265], [7.4221125, 46.4931164], [7.4232856, 46.4914361], [7.4234092, 46.4912689], [7.4257714, 46.4887464], [7.4259118, 46.4885597], [7.426039, 46.4883148], [7.4267149, 46.4866212], [7.4268353, 46.4862111], [7.4267648, 46.4853056], [7.4267617, 46.4850628], [7.4268114, 46.4847706], [7.427051, 46.4842502], [7.4276483, 46.4830189], [7.4302305, 46.477714], [7.4304002, 46.477401], [7.4308728, 46.4767589], [7.4347792, 46.471437], [7.4354941, 46.470463], [7.4358157, 46.4700223], [7.4368483, 46.4686071], [7.4371322, 46.4681973], [7.4381305, 46.4668922], [7.439077, 46.4659118], [7.4393704, 46.4655293], [7.4395353, 46.4651614], [7.4400243, 46.4641942], [7.4402205, 46.4637996], [7.4403311, 46.4636358], [7.4404091, 46.4635596], [7.440515, 46.463456], [7.4405865, 46.4633861], [7.4409781, 46.4630018], [7.441152, 46.4628103], [7.4416164, 46.4619486], [7.4417659, 46.4616272], [7.4418955, 46.4613207], [7.4420476, 46.4610218], [7.442389, 46.4602882], [7.4424694, 46.4601546], [7.4426473, 46.4599509], [7.4427392, 46.4598717], [7.4430615, 46.4595674], [7.4432087, 46.4593833], [7.4433174, 46.4591644], [7.4438829, 46.45794]], "type": "LineString"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"}
@@ -109,308 +90,24 @@ Electrification: <strong>900 V DC</strong>   </p>
 <h2>Cabride</h2>
 <p>By <a href="https://www.youtube.com/channel/UCw2w88C_dhH">Laurent Fasnacht:</a><br />
 &nbsp;&nbsp;<strong><a href="https://www.youtube.com/watch?v=NHmV2tSbM_c">Lenk im Simmental - Zweisimmen</a></strong>  </p>
-  </div>
-  
-<div class="article-tag-list">
-<span class="label label-default">Tags</span>
-	<a href="/tag/switzerland.html"><i class="fa fa-tag"></i>switzerland</a>&nbsp;
-	<a href="/tag/narrow-gauge.html"><i class="fa fa-tag"></i>narrow gauge</a>&nbsp;
-	<a href="/tag/electrified.html"><i class="fa fa-tag"></i>electrified</a>&nbsp;
-	<a href="/tag/scenic.html"><i class="fa fa-tag"></i>scenic</a>&nbsp;
-	<a href="/tag/mountains.html"><i class="fa fa-tag"></i>mountains</a>&nbsp;
-	<a href="/tag/alps.html"><i class="fa fa-tag"></i>alps</a>&nbsp;
-</div>  <hr />
-  <div class="well well-sm">  <!-- Social media sharing buttons -->
-
-    <!-- Google+ -->
-    <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <div class="g-plusone" data-size="medium"></div>&nbsp;
-
-    <!-- Facebook -->
-    <div class="fb-like" 
-        data-href="/line/switzerland/zweisimmen-lenk-im-simmental.html" 
-        data-layout="button_count" 
-        data-action="like" data-show-faces="true" 
-        data-share="true">
+      </div><!-- /.entry-content -->
+      <div class="published" title="2016-03-03T00:00:10+01:00"> 2016-03-03 </div>
     </div>
-    &nbsp;
-  </div> <!-- /Social media sharing buttons -->
-</article>
-        </div><!-- /content -->
+  </div>
 
-        <div class="col-md-3 sidebar-nav" id="sidebar">
+  <footer class="page-footer blue-grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="grey-text text-lighten-5" href="http://railvo.com">railvo</a>
+      </div>
+    </div>
+  </footer>
+        
+        
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="/theme/js/materialize.js"></script>
+        <script src="/theme/js/init.js"></script>
 
-<div class="row">
-
-
-<div class="col-xs-6 col-md-12">
-<h4><i class="fa fa-folder fa-fw fa-lg"></i> Categories</h4>
-<ul class="list-unstyled category-links">
-  <li><a href="/category/line.html" >
-    <i class="fa fa-folder-open fa-fw fa-lg"></i> line</a></li>
-</ul>
-</div>
-
-</div> <!-- /row -->
-
-
-<h4><i class="fa fa-tags fa-fw fa-lg"></i> Tags</h4>
-<p class="tag-cloud">
-<span class="tag-1">
-    <a href="/tag/alps.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>alps
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/austria.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>austria
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/bosnia-and-herzegovina.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>bosnia and herzegovina
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/bulgaria.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>bulgaria
-    </a>
-</span>
-<span class="tag-3">
-    <a href="/tag/california.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>california
-    </a>
-</span>
-<span class="tag-3">
-    <a href="/tag/croatia.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>croatia
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/czech-republic.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>czech republic
-    </a>
-</span>
-<span class="tag-1">
-    <a href="/tag/electrified.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>electrified
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/france.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>france
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/funicular.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>funicular
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/germany.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>germany
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/greece.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>greece
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/heritage.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>heritage
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/high-tatras.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>high tatras
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/industrial.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>industrial
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/italy.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>italy
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/karst.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>karst
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/main.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>main
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/mallorca.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>mallorca
-    </a>
-</span>
-<span class="tag-1">
-    <a href="/tag/mountains.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>mountains
-    </a>
-</span>
-<span class="tag-3">
-    <a href="/tag/mudflat.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>mudflat
-    </a>
-</span>
-<span class="tag-1">
-    <a href="/tag/narrow-gauge.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>narrow gauge
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/new-zealand.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>new zealand
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/norway.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>norway
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/over-the-sea.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>over the sea
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/pyrenees.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>pyrenees
-    </a>
-</span>
-<span class="tag-1">
-    <a href="/tag/rack.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>rack
-    </a>
-</span>
-<span class="tag-1">
-    <a href="/tag/regional.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>regional
-    </a>
-</span>
-<span class="tag-3">
-    <a href="/tag/rhaetian-railway.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>rhaetian railway
-    </a>
-</span>
-<span class="tag-1">
-    <a href="/tag/scenic.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>scenic
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/seaside.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>seaside
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/semaphore-signal.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>semaphore signal
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/slovakia.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>slovakia
-    </a>
-</span>
-<span class="tag-3">
-    <a href="/tag/slovenia.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>slovenia
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/spain.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>spain
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/steam.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>steam
-    </a>
-</span>
-<span class="tag-4">
-    <a href="/tag/suburban.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>suburban
-    </a>
-</span>
-<span class="tag-2">
-    <a href="/tag/switzerland.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>switzerland
-    </a>
-</span>
-<span class="tag-3">
-    <a href="/tag/tram.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>tram
-    </a>
-</span>
-<span class="tag-3">
-    <a href="/tag/united-states.html">
-        <i class="fa fa-tag fa-fw fa-lg"></i>united states
-    </a>
-</span>
-</p>
-
-
-<hr />
-
-        </div><!--/sidebar -->
-      </div><!--/row-->
-    </div><!--/.container /#main-container -->
-
-    <footer id="site-footer">
- 
-      <address id="site-colophon">
-        <p class="text-center text-muted">
-        Site built using <a href="http://getpelican.com/" target="_blank">Pelican</a>
-        &nbsp;&bull;&nbsp; Theme based on
-        <a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"
-           target="_blank">VoidyBootstrap</a> by 
-        <a href="http://www.robertiwancz.com/"
-           target="_blank">RKI</a>  
-        </p>
-      </address><!-- /colophon  -->
-    </footer>
-
-
-    <!-- javascript -->
-   
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-<!-- Facebook -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
-<!-- Twitter -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-<!-- Google+ -->
-<!-- Synchronous 
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
--->
-<!-- Asynchronous -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>  </body>
+    </body>
 </html>
