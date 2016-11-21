@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>railvo - La Rhune rack railway</title>
+
+
+
+    <meta name="tags" content="france" />
+    <meta name="tags" content="narrow gauge" />
+    <meta name="tags" content="rack" />
+    <meta name="tags" content="electrified" />
+    <meta name="tags" content="scenic" />
+    <meta name="tags" content="mountains" />
+    <meta name="tags" content="pyrenees" />
+
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/theme/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/theme/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <!-- leaflet -->
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+        <!--[if lte IE 8]>
+           <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+        <![endif]-->
+        <style>#map{height:500px;width:100%} #map img{padding:0}</style>
+
+        <!-- leaflet -->
+        <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+        
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-86547609-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+</head>
+
+<body>
+        <nav class="blue-grey darken-3" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">railvo</a>
+                <ul class="right hide-on-med-and-down">
+  
+                    <li class="">
+                        <a href="/archives.html">Archives</a>
+                    </li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+  
+                    <li class="">
+                        <a href="/archives.html">Archives</a>
+                    </li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <header>
+        <h2 class="entry-title">
+          <a href="/2016/la-rhune-rack-railway.html" rel="bookmark"
+             title="Permalink to La Rhune rack railway">La Rhune rack railway</a></h2>
+     
+     <div class="entry-content"> <p>Rack railway in the Pyrenees</p> </div>
+<div>
+	<div class="chip"><a href="/tag/france.html">france</a></div>
+	<div class="chip"><a href="/tag/narrow-gauge.html">narrow gauge</a></div>
+	<div class="chip"><a href="/tag/rack.html">rack</a></div>
+	<div class="chip"><a href="/tag/electrified.html">electrified</a></div>
+	<div class="chip"><a href="/tag/scenic.html">scenic</a></div>
+	<div class="chip"><a href="/tag/mountains.html">mountains</a></div>
+	<div class="chip"><a href="/tag/pyrenees.html">pyrenees</a></div>
+</div>     
+      </header>
+      <div class="entry-content">
+        <div id="map"></div>
+
+<script language="javascript">
+line = {"features": [{"geometry": {"coordinates": [[-1.63526, 43.3093013], [-1.6351153, 43.3092683], [-1.6346722, 43.3091481], [-1.6344121, 43.3091248], [-1.6333506, 43.3092049], [-1.6309064, 43.3095835], [-1.6307026, 43.3095796], [-1.629206, 43.3093473], [-1.6290371, 43.3093337], [-1.6273365, 43.3093864], [-1.6260299, 43.3094872], [-1.6250571, 43.3094664], [-1.6247268, 43.3095347], [-1.6245256, 43.3096264], [-1.6243539, 43.3097845], [-1.6242493, 43.3099426], [-1.6242037, 43.3100851], [-1.6241984, 43.3102237], [-1.6242279, 43.3103583], [-1.624303, 43.3105164], [-1.6256387, 43.3120153], [-1.6262851, 43.3129775], [-1.6263441, 43.3131004], [-1.6263951, 43.3133541], [-1.6263173, 43.3135805], [-1.626202, 43.3137405], [-1.6260196, 43.3138654], [-1.6257621, 43.3139806], [-1.6245043, 43.3143084], [-1.624374, 43.3143418], [-1.6235432, 43.3145549], [-1.6232822, 43.3145686], [-1.6208327, 43.3143083], [-1.6199689, 43.3140779], [-1.6194144, 43.3139869], [-1.6180396, 43.3137893], [-1.6177884, 43.3137532], [-1.6166337, 43.3137099], [-1.6154759, 43.3138405], [-1.6151908, 43.3139098], [-1.6149958, 43.3140202], [-1.6145723, 43.3143872], [-1.6143659, 43.3144835], [-1.6141453, 43.3145418], [-1.6139663, 43.3145596], [-1.6133268, 43.3145365], [-1.613007, 43.3145746], [-1.6127424, 43.3146637], [-1.6125309, 43.3148082], [-1.6116962, 43.3160135], [-1.6105136, 43.316998], [-1.6097476, 43.3177267], [-1.6092193, 43.3183393], [-1.6082807, 43.3196557], [-1.6074666, 43.3212042], [-1.6071096, 43.3217024], [-1.6067252, 43.322114], [-1.606538, 43.3222742], [-1.6047008, 43.323345], [-1.6040241, 43.3239361], [-1.6038499, 43.3240519], [-1.6035467, 43.324158], [-1.6026095, 43.3243253], [-1.6022867, 43.3243012], [-1.60194, 43.3242355], [-1.6016024, 43.3242744], [-1.6012919, 43.3243609], [-1.6011379, 43.3244454], [-1.6009998, 43.3245584], [-1.6008472, 43.3247797], [-1.6008133, 43.32501], [-1.6008178, 43.3251204]], "type": "LineString"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"}
+var map = L.map('map').setView([0,0],13);
+var mqLayer = L.tileLayer("http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {maxZoom: 17, subdomains:"abc",attribution:"Map data: &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>, <a href='http://viewfinderpanoramas.org'>SRTM</a> | Map style: &copy; <a href='https://opentopomap.org'>OpenTopoMap</a> (<a href='https://creativecommons.org/licenses/by-sa/3.0/'>CC-BY-SA</a>)"})
+mqLayer.addTo(map);
+map.attributionControl.setPrefix('');
+var geojsonLayer = L.geoJson(line,{style:{"color":"#0000ff","weight":4,"opacity":0.8}}).addTo(map);
+map.fitBounds(geojsonLayer.getBounds());
+</script>
+
+<h2>Line</h2>
+<p>Country: <strong>France</strong><br />
+From: <strong>Col de Saint-Ignace</strong><br />
+To: <strong>La Rhune</strong><br />
+Gauge: <strong>1000 mm</strong><br />
+Length: <strong>4 km</strong><br />
+Track no: <strong>1</strong><br />
+Electrification: <strong>3 kV 50 Hz trifase</strong> <br />
+Rack system: <strong>Strub</strong>  </p>
+<h2>Cabride</h2>
+<p>By <a href="https://www.youtube.com/channel/UC9iqkV520mhSVBWC9EYAVkw">Spirit Track:</a><br />
+&nbsp;&nbsp;<strong><a href="https://www.youtube.com/watch?v=2rXFUOpVhac">Col de Saint-Ignace - La Rhune</a></strong>  </p>
+<h2>External links</h2>
+<p><a href="https://en.wikipedia.org/wiki/Petit_train_de_la_Rhune">https://en.wikipedia.org/wiki/Petit_train_de_la_Rhune</a> (en)<br />
+<a href="http://www.rhune.com/uk/index.aspx">http://www.rhune.com/uk/index.aspx</a> (en)  </p>
+      </div><!-- /.entry-content -->
+      <div class="published" title="2016-02-25T00:00:10+01:00"> 2016-02-25 </div>
+    </div>
+  </div>
+
+  <footer class="page-footer blue-grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="grey-text text-lighten-5" href="mailto:railvo@railvo.com">railvo</a>
+      </div>
+    </div>
+  </footer>
+        
+        
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="/theme/js/materialize.js"></script>
+        <script src="/theme/js/init.js"></script>
+
+    </body>
+</html>
