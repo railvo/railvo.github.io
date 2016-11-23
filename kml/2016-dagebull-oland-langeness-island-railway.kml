@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Dagebüll - Oland - Langeneß island railway</name>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ccffaa00</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ccffaa00</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Dagebüll - Oland - Langeneß island railway</name>
+		<description>See http://railvo.com/2016/dagebull-oland-langeness-island-railway.html</description>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				8.6519878,54.6490349,0 8.652153,54.6492595,0 8.652299,54.6494027,0 8.6524893,54.6495806,0 8.6525979,54.649711,0 8.6701602,54.671212,0 8.6704013,54.6714242,0 8.6707621,54.6716444,0 8.6710408,54.6717727,0 8.6713499,54.6718798,0 8.6716516,54.6719659,0 8.6820295,54.674591,0 8.6823434,54.6746444,0 8.6849934,54.6749326,0 8.6863033,54.6750773,0 8.6867915,54.6751275,0 8.6870941,54.6751541,0 8.6874122,54.675179,0 8.6875989,54.6751801,0 8.6877897,54.675166,0 8.6886513,54.67501,0 8.6889704,54.6749624,0 8.6892472,54.6749335,0 8.6895728,54.6749166,0 8.6921659,54.6749847,0 8.6925679,54.6750134,0 8.6996135,54.6757757,0 8.7016608,54.6759932,0 8.7019515,54.6760446,0 8.7022124,54.6761344,0 8.7024901,54.6762593,0 8.7072553,54.6787402,0 8.7093164,54.6798372,0 8.7094892,54.6799647,0 8.7096126,54.680095,0 8.7097046,54.6802503,0 8.7097446,54.6804262,0 8.709918,54.6837105,0 8.710009,54.6843976,0 8.7108058,54.6998862,0 8.7108491,54.7007284,0 8.711312,54.7097236,0 8.7113554,54.7105163,0 8.7120211,54.7233085,0 8.712005,54.7234076,0 8.7119593,54.7235002,0 8.7118577,54.7236127,0 8.7116761,54.7237339,0 8.7114677,54.7238137,0 8.7111049,54.7239042,0 8.710567,54.7240055,0 8.7081701,54.7243192,0 8.7059688,54.7245742,0 8.7007542,54.7250372,0 8.700481,54.7250909,0 8.7002802,54.7251636,0 8.7001276,54.7252651,0 8.6999016,54.7254827,0 8.6998168,54.7257111,0 8.6997907,54.725965,0 8.699767,54.7261639,0 8.6997163,54.726625,0 8.6996863,54.726954,0 8.6996427,54.7273177,0 8.699626,54.7274634,0 8.6996114,54.7275912,0
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
